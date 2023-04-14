@@ -92,3 +92,4 @@ class DevConfig(Config):
 class TestingConfig(Config):
     ENV = 'testing'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_TEST_URL')
+    CSP_DIRECTIVES = {}
